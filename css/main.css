@@ -123,6 +123,16 @@ body {
     margin: 0;
 }
 
+a {
+    color: inherit;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+a:hover {
+    color: var(--placeholder);
+}
+
 
 .hide, .hidden, [hide], [hidden] {
     display: none;
@@ -190,6 +200,10 @@ body {
     padding: .5rem 0;
     cursor: pointer;
     transition: .2s;
+}
+
+.header-menu .header-menu__item:hover a {
+    color: var(--text);
 }
 
 .header-menu .header-menu__item.active {
@@ -266,15 +280,5 @@ body {
     justify-content: center;
     align-items: center;
     align-content: center;
-}
-
-a {
-    color: inherit;
-    cursor: pointer;
-    transition: all .3s;
-}
-
-a:hover {
-    color: var(--placeholder);
 }
 

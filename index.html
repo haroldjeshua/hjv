@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Harv</title>
+    <link rel="apple-touch-icon" href="favicon.png">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <a href="./">
+                <svg class="logo" width="112" height="32" viewBox="0 0 112 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M80 0H112L96 32L80 0Z" fill="currentColor"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M72 0H40V16C40 20.2435 41.6857 24.3131 44.6863 27.3137C47.6869 30.3143 51.7565 32 56 32C60.2435 32 64.3131 30.3143 67.3137 27.3137C70.3143 24.3131 72 20.2435 72 16V0Z" fill="currentColor"/>
+                    <path d="M0 0H32V32H0V0Z" fill="currentColor"/>
+                </svg>                    
+            </a>
+            <span hidden class="logo-text">HJV</span>
+        </div>
+        <div class="header-center">
+            
+            <div class="header-center">
+                <ul class="header-menu">
+                    <li class="header-menu__item active"><a>All</a></li>
+                    <li class="header-menu__item"><a href="#about/">About</a></li>
+                    <li class="header-menu__item"><a href="#projects/">Projects</a></li>
+                    <li class="header-menu__item"><a href="#contact/">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-right">
+            <button class="action-button system-pref-button" role="switch" aria-label="light/dark mode">
+                <svg class="system-pref system-pref--dark-mode" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+            <audio src="audio/light-on.mp3" class="theme-audio--light-on" data-attribute="adapted from user 160033 file on freesound.org https://freesound.org/people/160033/sounds/366184/ under CC BY-NC 3.0"></audio>
+            <audio src="audio/light-off.mp3" class="theme-audio--light-off" data-attribute="adapted from user 160033 file on freesound.org https://freesound.org/people/160033/sounds/366184/ under CC BY-NC 3.0"></audio>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="page">
+            <div class="logo-wrapper">
+                <svg class="logo logo--large" width="400" height="128" viewBox="0 0 400 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M272 0H400L336 128L272 0Z" fill="currentColor"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M264 0H136V64C136 80.9739 142.743 97.2525 154.745 109.255C166.747 121.257 183.026 128 200 128C216.974 128 233.253 121.257 245.255 109.255C257.257 97.2525 264 80.9739 264 64V0Z" fill="currentColor"/>
+                    <path d="M0 0H128V128H0V0Z" fill="currentColor"/>
+                </svg>                    
+            </div>
+
+            <h1>Harold Jeshua Varde</h1>
+            <br>
+            <p>A designer and developer from Batangas, PH. Interested in product design, design system, React or Svelte and everything vanilla.</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="copyright">
+            &copy; 1995 - <script>document.write(new Date().getFullYear())</script> Harold Jeshua Varde. All rights reserved.
+        </div>
+    </footer>
+    
+    <script src="js/app.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>

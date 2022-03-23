@@ -160,7 +160,7 @@ a:hover {
 
 .copyright {
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -194,6 +194,12 @@ a:hover {
     flex-direction: row;
 }
 
+@media screen and (max-width: 576px) {
+    .header-menu {
+        display: none;
+    }
+}
+
 .header-menu .header-menu__item {
     color: var(--placeholder);
     margin: 0 1rem;
@@ -213,11 +219,14 @@ a:hover {
 .logo {
     /* width: 64px; */
     height: 32px;
+    width: 100%;
     margin-right: 8px;
 }
 
 .logo--large {
-    height: 256px;
+    height: 128px;
+    width: 100%;
+    margin-bottom: 3rem;
 }
 
 .logo-text {
@@ -281,5 +290,6 @@ a:hover {
     align-items: center;
     align-content: center;
     text-align: center;
+    padding: 2rem;
 }
 

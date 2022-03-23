@@ -306,3 +306,33 @@ h1, h2, h3, h4, h5, h6 {
     padding: 2rem;
 }
 
+.harv-name {
+    font-size: clamp(2.75rem, 4vw, 5rem);
+    margin-bottom: 3rem;
+}
+
+.harv-lead {
+    font-weight: 300;
+    margin-bottom: 3rem;
+}
+
+.button {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    color: var(--bg);
+    background: var(--text);
+    height: 5rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    border-radius: 5px;
+    border: none;
+    padding: 0 3.2rem;
+    text-decoration: none;
+    cursor: pointer;
+}

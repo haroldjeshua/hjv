@@ -170,6 +170,10 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 300;
 }
 
+::selection {
+	color: var(--bg);
+	background-color: var(--text);
+}
 
 .hide, .hidden, [hide], [hidden] {
 	display: none;
@@ -405,6 +409,15 @@ h1, h2, h3, h4, h5, h6 {
 	flex: 1 1 0%;
 	align-items: center;
 	height: 100%;
+	color: var(--placeholder);
+}
+
+.navbar__list-item:hover a {
+	color: var(--bg);
+}
+
+.navbar__list-item.active {
+	color: var(--bg);
 }
 
 .navbar__list-link {

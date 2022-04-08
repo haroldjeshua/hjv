@@ -234,10 +234,8 @@ template {
     display: none;
 }
 
-/* ===================================================================
- * # basic/base setup styles
- *
- * ------------------------------------------------------------------- */
+
+/* # basic/base setup styles */
 html {
     font-size: 62.5%;
     box-sizing: border-box;
@@ -270,9 +268,8 @@ button {
     line-height: inherit;
 }
 
-/* ------------------------------------------------------------------- 
- * ## Media
- * ------------------------------------------------------------------- */
+
+/* ## Media */
 img,
 video {
     max-width: 100%;
@@ -280,9 +277,7 @@ video {
 }
 
 
-/* ------------------------------------------------------------------- 
- * ## Typography resets 
- * ------------------------------------------------------------------- */
+/* ## Typography resets  */
 div,
 dl,
 dt,
@@ -347,9 +342,7 @@ li {
 }
 
 
-/* ------------------------------------------------------------------- 
- * ## links 
- * ------------------------------------------------------------------- */
+/* ## links  */
 a {
     text-decoration: none;
     line-height: inherit;
@@ -360,9 +353,7 @@ a img {
 }
 
 
-/* ------------------------------------------------------------------- 
- * ## inputs 
- * ------------------------------------------------------------------- */
+/* ## inputs  */
 fieldset {
     margin: 0;
     padding: 0;
@@ -384,10 +375,7 @@ textarea {
 }
 
 
-/* ===================================================================
- * # grid
- *
- * ------------------------------------------------------------------- */
+/* grid */
 .row {
     width: 94%;
     max-width: 1400px;
@@ -412,8 +400,7 @@ textarea {
 }
 
 
-/* column blocks
- * -------------------------------------- */
+/* column blocks */
 [class*="col-"] {
     float: left;
     padding: 0 20px;
@@ -424,8 +411,7 @@ textarea {
 }
 
 
-/* column width classes 
- * -------------------------------------- */
+/* column width classes  */
 .col-01,
 .col-one {
     width: 8.33333%;
@@ -501,9 +487,7 @@ textarea {
 }
 
 
-/* ------------------------------------------------------------------- 
- * ## medium size devices
- * ------------------------------------------------------------------- */
+/* ## medium size devices */
 @media only screen and (max-width: 1200px) {
     .row .row {
         margin-left: -10px;
@@ -594,9 +578,7 @@ textarea {
 }
 
 
-/* ------------------------------------------------------------------- 
- * ## tablets
- * ------------------------------------------------------------------- */
+/* ## tablets */
 @media only screen and (max-width: 800px) {
     .row {
         width: 90%;
@@ -655,9 +637,7 @@ textarea {
 }
 
 
-/* ------------------------------------------------------------------- 
- * ## mobile devices
- * ------------------------------------------------------------------- */
+/* ## mobile devices */
 @media only screen and (max-width: 600px) {
     .row {
         width: auto;
@@ -722,13 +702,8 @@ textarea {
 }
 
 
-/* ------------------------------------------------------------------- 
- * ## small mobile devices
- * ------------------------------------------------------------------- */
-
-/* stack columns on small mobile devices
- * ------------------------------------------------------------------- */
-
+/* ## small mobile devices */
+/* stack columns on small mobile devices */
 @media only screen and (max-width: 400px) {
     .row {
         width: auto;
@@ -803,13 +778,9 @@ textarea {
     }
 }
 
-/* ------------------------------------------------------------------- 
- * ## small mobile devices
- * ------------------------------------------------------------------- */
 
-/* stack columns on extra small mobile devices
- * ------------------------------------------------------------------- */
-
+/* ## small mobile devices */
+/* stack columns on extra small mobile devices */
 @media only screen and (max-width: 300px) {
     .row .row {
         padding-left: 0;
@@ -837,12 +808,8 @@ textarea {
 }
 
 
-/* ===================================================================
- * # block grids
- * ------------------------------------------------------------------- */
-
-/*   Equally-sized columns define at row level
- * ------------------------------------------------------------------- */
+/* # block grids */
+/* Equally-sized columns define at row level */
 [class*="block-"]:after {
     content: "";
     display: table;
@@ -875,10 +842,10 @@ textarea {
 }
 
 
-/**
- * Clearing for block grid columns. Allow columns with 
- * different heights to align properly.
- */
+/* 
+    Clearing for block grid columns. Allow columns with 
+    different heights to align properly.
+*/
 
 .block-1-6 .col-block:nth-child(6n+1),
 .block-1-5 .col-block:nth-child(5n+1),
@@ -889,9 +856,7 @@ textarea {
 }
 
 
-/* ------------------------------------------------------------------- 
- * ## medium size devices
- * ------------------------------------------------------------------- */
+/* ## medium size devices */
 @media only screen and (max-width: 1200px) {
     .block-m-1-6 .col-block {
         width: 16.66667%;
@@ -932,9 +897,7 @@ textarea {
 }
 
 
-/* ------------------------------------------------------------------- 
- * ## tablets
- * ------------------------------------------------------------------- */
+/* ## tablets */
 @media only screen and (max-width: 800px) {
     .block-tab-1-6 .col-block {
         width: 16.66667%;
@@ -975,9 +938,7 @@ textarea {
 }
 
 
-/* ------------------------------------------------------------------- 
- * ## mobile devices
- * ------------------------------------------------------------------- */
+/* ## mobile devices */
 @media only screen and (max-width: 600px) {
     .block-mob-1-6 .col-block {
         width: 16.66667%;
@@ -1018,13 +979,8 @@ textarea {
 }
 
 
-/* ------------------------------------------------------------------- 
- * ## small mobile devices
- * ------------------------------------------------------------------- */
-
-/* stack columns on small mobile devices
- * ------------------------------------------------------------------- */
-
+/* ## small mobile devices */
+/* stack columns on small mobile devices */
 @media only screen and (max-width: 400px) {
     .stack .col-block {
         width: 100% !important;
@@ -1036,10 +992,7 @@ textarea {
 }
 
 
-/* ===================================================================
- * # MISC
- *
- * ------------------------------------------------------------------- */
+/* misc */
 .wide {
     max-width: 1400px;
 }

@@ -33,7 +33,7 @@
             </a>
             <span hidden class="logo-text">HJV</span>
         </div>
-        <div class="header-center">
+        <div hidden class="header-center">
             <div class="header-center">
                 <ul class="header-menu">
                     <li class="header-menu__item active"><a>All</a></li>
@@ -55,26 +55,44 @@
     <main class="main">
         <div class="page">
             <div class="logo-wrapper">
-                <svg class="logo logo--small" width="400" height="128" viewBox="0 0 400 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="logo logo--small" width="400" height="128" viewBox="0 0 400 128" fill="none" xmlns="http://www.w3.org/2000/svg" data-aos="fade-up">
                     <path d="M272 0H400L336 128L272 0Z" fill="currentColor"/>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M264 0H136V64C136 80.9739 142.743 97.2525 154.745 109.255C166.747 121.257 183.026 128 200 128C216.974 128 233.253 121.257 245.255 109.255C257.257 97.2525 264 80.9739 264 64V0Z" fill="currentColor"/>
                     <path d="M0 0H128V128H0V0Z" fill="currentColor"/>
                 </svg>                    
             </div>
 
-            <h1 class="harv-name">Harold Jeshua Varde</h1>
-            <p class="harv-lead">A designer and developer from Philippines. Interested in product design, design system, React or Svelte and everything vanilla.</p>
+            <h1 class="harv-name" data-aos="fade-up">Harold Jeshua Varde</h1>
+            <p class="harv-lead" data-aos="fade-up">A designer and developer from Philippines. Interested in product design, design system, React or Svelte and everything vanilla.</p>
 
-            <a href="#Explore" class="button">More will be updated soon.</a>
+            <small data-aos="fade-up">More to be updated soon.</small>
         </div>
     </main>
 
-    <footer class="footer">
+    <nav class="navbar navbar--bottom">
+        <ul class="navbar__list">
+            <li class="navbar__list-item">
+                <a class="navbar__list-link" href="#Home">Home</a>
+            </li>
+            <li class="navbar__list-item">
+                <a class="navbar__list-link" href="#Work">Work</a>
+            </li>
+            <li class="navbar__list-item">
+                <a class="navbar__list-link" href="#About">About</a>
+            </li>
+            <li class="navbar__list-item">
+                <a class="navbar__list-link" href="#Contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <footer hidden class="footer">
         <div class="copyright">
-            &copy; 1995 - <script>document.write(new Date().getFullYear())</script> Harold Jeshua Varde. All rights reserved.
+            &copy; 1995 - <span class="year"></span> Harold Jeshua Varde. All rights reserved.
         </div>
     </footer>
     
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/app.js"></script>
     <script src="js/theme.js"></script>
 </body>

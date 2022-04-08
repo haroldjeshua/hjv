@@ -390,7 +390,7 @@ h1, h2, h3, h4, h5, h6 {
 	border: 1px solid var(--border);
 	border-radius: var(--radii-2);
 	box-shadow: var(--shadows-large);
-	transform: translate(-50%, -50%) translateY(-8px);
+	transform: translate(-50%, -50%) translateY(0);
 }
 
 .navbar__list {
@@ -422,7 +422,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar__list-link {
 	display: flex;
-	padding: 0 1.5rem;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: clamp(.75rem, 2.5vw, 1.5rem);
+	padding-right: clamp(.75rem, 2.5vw, 1.5rem);
 	height: 100%;
 	align-items: center;
 }

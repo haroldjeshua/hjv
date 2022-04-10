@@ -170,6 +170,25 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 300;
 }
 
+h1 {
+	font-size: 8rem;
+}
+
+h1.display {
+	line-height: var(--space-8);
+	margin-bottom: var(--space-4);
+}
+
+h1.display::first-letter {
+	font-style: oblique;
+}
+
+p.lead {
+	font-size: var(--font-size-md);
+	line-height: 1.25;
+	margin-bottom: var(--space-1);
+}
+
 ::selection {
 	color: var(--bg);
 	background-color: var(--text);
@@ -352,6 +371,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .page.active {
 	display: flex;
+}
+
+.page:not(.section--home) {
+	justify-content: flex-start;
 }
 
 .harv-name {

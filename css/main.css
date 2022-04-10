@@ -377,6 +377,10 @@ p.lead {
 	justify-content: flex-start;
 }
 
+.section-body {
+	margin-top: var(--space-10);
+}
+
 .harv-name {
 	font-size: clamp(3rem, 5vw, 5rem);
 	margin-bottom: 3rem;

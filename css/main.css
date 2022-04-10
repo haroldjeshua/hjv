@@ -347,6 +347,11 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 	margin: auto;
 	padding: 2rem;
+	display: none;
+}
+
+.page.active {
+	display: flex;
 }
 
 .harv-name {

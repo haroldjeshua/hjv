@@ -379,18 +379,52 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar {
+	--width: 300px;
+	--height: 50px;
+
 	position: absolute;
-	bottom: 0;
-	left: 50%;
-	height: 64px;
-	display: flex;
-	background-color: var(--nav-bg);
-	backdrop-filter: blur(8px);
-	color: var(--bg);
-	border: 1px solid var(--border);
-	border-radius: var(--radii-2);
-	box-shadow: var(--shadows-large);
-	transform: translate(-50%, -16%) translateY(0);
+    bottom: 12px;
+    left: calc(50% - var(--width) / 2);
+	width: 300px;
+    height: 50px;
+
+	display: grid;
+	grid: var(--height) / auto-flow;
+	justify-content: space-evenly;
+    align-items: center;
+
+    background-color: var(--nav-bg);
+    backdrop-filter: blur(8px);
+    color: var(--bg);
+    border-radius: var(--radii-2);
+    box-shadow: var(--shadows-large);
+}
+
+.navbar__link {
+	position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar__link::after {
+	content: '';
+    position: absolute;
+    width: 16px;
+    height: 4px;
+    background-color: var(--bg);
+    border-radius: var(--radii-4);
+    bottom: 8px;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.navbar__link.active::after {
+	opacity: 1;
+	visibility: visible;
 }
 
 .navbar__list {
@@ -400,7 +434,6 @@ h1, h2, h3, h4, h5, h6 {
 	align-content: center;
 	justify-content: center;
 	align-items: center;
-	height: 64px;
 	border-radius: var(--radii-3);
 }
 

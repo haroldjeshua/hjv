@@ -183,6 +183,10 @@ h1, h2, h3, h4, h5, h6 {
 	visibility: hidden;
 }
 
+.topbar .bar {
+	background-color: var(--text);
+}
+
 .header {
 	position: fixed;
 	display: flex;
@@ -408,59 +412,35 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     align-items: center;
     height: 100%;
+	color: var(--placeholder);
+}
+
+.navbar__link:hover {
+	color: var(--bg);
+}
+
+.navbar__link.active {
+	color: var(--bg);
+	font-weight: 500;
 }
 
 .navbar__link::after {
 	content: '';
     position: absolute;
-    width: 16px;
+    width: 0;
     height: 4px;
     background-color: var(--bg);
     border-radius: var(--radii-4);
     bottom: 8px;
 	opacity: 0;
 	visibility: hidden;
+	transition: all .3s;
 }
 
 .navbar__link.active::after {
+	width: 16px;
 	opacity: 1;
 	visibility: visible;
-}
-
-.navbar__list {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	align-content: center;
-	justify-content: center;
-	align-items: center;
-	border-radius: var(--radii-3);
-}
-
-.navbar__list-item {
-	display: flex;
-	flex: 1 1 0%;
-	align-items: center;
-	height: 100%;
-	color: var(--placeholder);
-}
-
-.navbar__list-item:hover a {
-	color: var(--bg);
-}
-
-.navbar__list-item.active {
-	color: var(--bg);
-}
-
-.navbar__list-link {
-	display: flex;
-	padding-top: 0;
-	padding-bottom: 0;
-	padding-left: clamp(.75rem, 2.5vw, 1.5rem);
-	padding-right: clamp(.75rem, 2.5vw, 1.5rem);
-	height: 100%;
-	align-items: center;
 }
 
 @keyframes float {

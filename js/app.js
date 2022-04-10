@@ -4,6 +4,8 @@ const topBar = {
 };
 
 let nanobar = new Nanobar( topBar );
+nanobar.go(33);
+nanobar.go(66);
 nanobar.go(100);
 
 

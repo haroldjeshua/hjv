@@ -377,6 +377,10 @@ p.lead {
 	justify-content: flex-start;
 }
 
+.section--work {
+	cursor: url('../assets/media/cursor--project-32.png'), url('../assets/media/cursor--project-32.svg'), url('../assets/media/cursor--project-32.jpg'), auto;
+}
+
 .section-body {
 	margin-top: var(--space-10);
 }

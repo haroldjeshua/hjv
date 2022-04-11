@@ -368,6 +368,7 @@ p.lead {
     align-items: center;
     height: 100%;
 	color: var(--placeholder);
+	transition: all .3s;
 }
 
 .navbar__link:hover {
@@ -376,7 +377,6 @@ p.lead {
 
 .navbar__link.active {
 	color: var(--bg);
-	font-weight: 500;
 }
 
 .navbar__link::after {

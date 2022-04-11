@@ -1,0 +1,102 @@
+:root {
+	--font-main: 'Inter', sans-serif;
+	--font-serif: serif;
+	--font-mono: monospace;
+
+	--font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+	--font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+	--font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+	--font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+	--font-size-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+	--font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+	--font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+
+	--color-main: hsl(357, 92%, 47%);
+	--color-main-900: hsl(336, 98%, 22%);
+	--color-main-800: hsl(341, 97%, 26%);
+	--color-main-700: hsl(346, 95%, 33%);
+	--color-main-600: hsl(351, 94%, 40%);
+	--color-main-500: hsl(357, 92%, 47%);
+	--color-main-400: hsl(2, 84%, 60%);
+	--color-main-300: hsl(8, 90%, 69%);
+	--color-main-200: hsl(13, 94%, 80%);
+	--color-main-100: hsl(18, 87%, 94%);
+
+	--color-dark: hsl(0, 0%, 13%);
+	--color-dark-400: hsl(210, 2%, 18%);
+	--color-dark-300: hsl(180, 1%, 26%);
+	--color-dark-200: hsl(180, 1%, 33%);
+	--color-dark-100: hsl(150, 1%, 41%);
+
+	--color-grey-dark: hsl(0, 0%, 20%);
+	--color-grey-dark-400: hsl(0, 0%, 27%);
+	--color-grey-dark-300: hsl(0, 0%, 34%);
+	--color-grey-dark-200: hsl(0, 0%, 41%);
+	--color-grey-dark-100: hsl(0, 0%, 47%);
+
+	--color-grey: hsl(0, 0%, 60%);
+	--color-grey-400: hsl(0, 0%, 65%);
+	--color-grey-300: hsl(0, 0%, 71%);
+	--color-grey-200: hsl(0, 0%, 76%);
+	--color-grey-100: hsl(0, 0%, 82%);
+	
+	--color-light-400: hsl(0, 0%, 95%);
+	--color-light-300: hsl(0, 0%, 95%); 
+	--color-light-200: hsl(0, 0%, 95%);
+	--color-light-100: hsl(0, 0%, 96%);
+	--color-light: hsl(0, 0%, 100%);
+
+	--color-light-075: hsla(0, 0%, 100%, 0.75);
+	--color-dark-075: hsla(0, 0%, 13%, 0.75);
+
+	--color-danger: hsl(352, 81%, 54%);
+	--color-warning: hsl(34, 99%, 64%);
+	--color-info: hsl(196, 100%, 40%);
+	--color-success: hsl(147, 98%, 36%);
+
+	--color-sub: hsl(213, 11%, 48%);
+	--color-border: hsl(0, 0%, 93%);
+
+	--blur-1: 8px;
+	--blur-2: 16px;
+
+	--space-1: 8px;
+	--space-2: 16px;
+	--space-3: 24px;
+	--space-4: 32px;
+	--space-5: 40px;
+	--space-6: 48px;
+	--space-7: 56px;
+	--space-8: 64px;
+	--space-9: 72px;
+	--space-10: 80px;
+	--space-11: 88px;
+
+	--radii-1: 4px;
+	--radii-2: 8px;
+	--radii-3: 16px;
+	--radii-4: 32px;
+	--radii-round: 50%;
+
+	--width-400: 400px;
+	--width-600: 600px;
+	--width-800: 800px;
+	--width-1000: 1000px;
+	--width-1200: 1200px;
+
+    --mq-mob: 480px;
+    --mq-tab: 768px;
+    --mq-md: 1024px;
+    --mq-lg: 1200px;
+    --mq-xl: 1201px;
+
+	--shadow-soft: 0 20px 25px -5px rgba(0, 0, 0, / .10), 0 10px 10px -5px rgba(0, 0, 0, / .04);
+	--shadow-main: 0px 5px 15px -5px rgba(229, 9, 20, 0.749);
+
+	--shadows-small: 0 5px 10px rgba(0, 0, 0, 0.12);
+	--shadows-medium: 0 8px 30px rgba(0, 0, 0, 0.12);
+	--shadows-large: 0 30px 60px rgba(0, 0, 0, 0.12);
+
+    --cursor-project--light: url('../assets/media/cursor--project-32-light.png'), url('../assets/media/cursor--project-32-light.svg'), url('../assets/media/cursor--project-32-light.jpg'), auto;
+    --cursor-project--dark: url('../assets/media/cursor--project-32-dark.png'), url('../assets/media/cursor--project-32-dark.svg'), url('../assets/media/cursor--project-32-dark.jpg'), auto;
+}

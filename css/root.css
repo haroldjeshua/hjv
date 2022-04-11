@@ -84,11 +84,11 @@
 	--width-1000: 1000px;
 	--width-1200: 1200px;
 
-    --mq-mob: 480px;
-    --mq-tab: 768px;
-    --mq-md: 1024px;
-    --mq-lg: 1200px;
-    --mq-xl: 1201px;
+	--mq-mob: 480px;
+	--mq-tab: 768px;
+	--mq-md: 1024px;
+	--mq-lg: 1200px;
+	--mq-xl: 1201px;
 
 	--shadow-soft: 0 20px 25px -5px rgba(0, 0, 0, / .10), 0 10px 10px -5px rgba(0, 0, 0, / .04);
 	--shadow-main: 0px 5px 15px -5px rgba(229, 9, 20, 0.749);
@@ -97,6 +97,16 @@
 	--shadows-medium: 0 8px 30px rgba(0, 0, 0, 0.12);
 	--shadows-large: 0 30px 60px rgba(0, 0, 0, 0.12);
 
-    --cursor-project--light: url('../assets/media/cursor--project-32-light.png'), url('../assets/media/cursor--project-32-light.svg'), url('../assets/media/cursor--project-32-light.jpg'), auto;
-    --cursor-project--dark: url('../assets/media/cursor--project-32-dark.png'), url('../assets/media/cursor--project-32-dark.svg'), url('../assets/media/cursor--project-32-dark.jpg'), auto;
+	--cursor-project--light: url('../assets/media/cursor--project-32-light.png'), url('../assets/media/cursor--project-32-light.svg'), url('../assets/media/cursor--project-32-light.jpg'), auto;
+	--cursor-project--dark: url('../assets/media/cursor--project-32-dark.png'), url('../assets/media/cursor--project-32-dark.svg'), url('../assets/media/cursor--project-32-dark.jpg'), auto;
+	
+	--mesh-bgc--dark: hsla(0,0%,13%,1);
+	--mesh-bgi--dark: 
+		radial-gradient(at 24% 90%, hsla(259,12%,47%,0.75) 0px, transparent 50%),
+		radial-gradient(at 70% 99%, hsla(258,27%,38%,0.86) 0px, transparent 50%);
+	
+	--mesh-bgc--light: hsla(0,0%,100%,1);
+	--mesh-bgi--light:
+		radial-gradient(at 24% 90%, hsla(266,58%,87%,1) 0px, transparent 50%),
+		radial-gradient(at 70% 99%, hsla(259,56%,75%,1) 0px, transparent 50%);
 }

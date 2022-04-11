@@ -10,8 +10,11 @@
 		--input: var(--color-grey-dark);
 		--placeholder: var(--color-grey-dark-300);
 		--fab: var(--color-dark-400);
+		--header-bg: var(--color-dark-075);
 		--nav-bg: var(--color-light-075);
 		--project-c: var(--cursor-project--dark);
+		--body-bgc: var(--mesh-bgc--dark);
+		--body-bgi: var(--mesh-bgi--dark);
 	}
 }
 
@@ -23,8 +26,11 @@
 		--input: var(--color-light-400);
 		--placeholder: var(--color-grey);
 		--fab: var(--color-light-400);
+		--header-bg: var(--color-light-075);
 		--nav-bg: var(--color-dark-075);
 		--project-c: var(--cursor-project--light);
+		--body-bgc: var(--mesh-bgc--light);
+		--body-bgi: var(--mesh-bgi--light);
 	}
 }
 
@@ -35,8 +41,11 @@
 	--input: var(--color-grey-dark);
 	--placeholder: var(--color-grey-dark-300);
 	--fab: var(--color-dark-400);
+	--header-bg: var(--color-dark-075);
 	--nav-bg: var(--color-light-075);
 	--project-c: var(--cursor-project--dark);
+	--body-bgc: var(--mesh-bgc--dark);
+	--body-bgi: var(--mesh-bgi--dark);
 }
 
 [color-scheme="light"]{
@@ -46,8 +55,11 @@
 	--input: var(--color-light-400);
 	--placeholder: var(--color-grey);
 	--fab: var(--color-light-400);
+	--header-bg: var(--color-light-075);
 	--nav-bg: var(--color-dark-075);
 	--project-c: var(--cursor-project--light);
+	--body-bgc: var(--mesh-bgc--light);
+	--body-bgi: var(--mesh-bgi--light);
 }
 
 *,
@@ -63,7 +75,7 @@ html {
 }
 
 body {
-	background: var(--bg);
+	background-color: var(--bg);
 	color: var(--text);
 	font-family: var(--font-main), -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -135,7 +147,8 @@ p.lead {
 	height: 5rem;
 	width: 100%;
 	border-bottom: 0 solid var(--border);
-	/* background: var(--bg); */
+	background-color: var(--header-bg);
+	backdrop-filter: blur(var(--blur-1));
 	z-index: 1;
 }
 
@@ -206,7 +219,7 @@ p.lead {
 
 .logo {
 	/* width: 64px; */
-	height: 32px;
+	height: var(--space-3);
 	width: 100%;
 	margin-right: 8px;
 }
@@ -295,7 +308,12 @@ p.lead {
 	display: flex;
 }
 
-.page.section--home {
+.page {
+	background-color: var(--body-bgc);
+	background-image: var(--body-bgi);
+}
+
+.hero {
 	max-width: 800px;
 }
 
@@ -330,7 +348,7 @@ p.lead {
     align-items: center;
 
     background-color: var(--nav-bg);
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(var(--blur-1));
     color: var(--bg);
     border-radius: var(--radii-2);
     box-shadow: var(--shadows-medium);

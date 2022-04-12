@@ -15,6 +15,7 @@
 		--project-c: var(--cursor-project--dark);
 		--body-bgc: var(--mesh-bgc--dark);
 		--body-bgi: var(--mesh-bgi--dark);
+		--project-bg: var(--color-dark-016);
 	}
 }
 
@@ -31,6 +32,7 @@
 		--project-c: var(--cursor-project--light);
 		--body-bgc: var(--mesh-bgc--light);
 		--body-bgi: var(--mesh-bgi--light);
+		--project-bg: var(--color-light-032);
 	}
 }
 
@@ -46,6 +48,7 @@
 	--project-c: var(--cursor-project--dark);
 	--body-bgc: var(--mesh-bgc--dark);
 	--body-bgi: var(--mesh-bgi--dark);
+	--project-bg: var(--color-dark-016);
 }
 
 [color-scheme="light"]{
@@ -60,6 +63,7 @@
 	--project-c: var(--cursor-project--light);
 	--body-bgc: var(--mesh-bgc--light);
 	--body-bgi: var(--mesh-bgi--light);
+	--project-bg: var(--color-light-032);
 }
 
 *,
@@ -472,7 +476,8 @@ img {
 	flex-direction: column;
 	align-items: flex-start;
 
-	background-color: var(--bg);
+	background-color: var(--project-bg);
+	backdrop-filter: blur(var(--blur-1));
 	color: var(--text);
 
 	border: 1px solid var(--border);

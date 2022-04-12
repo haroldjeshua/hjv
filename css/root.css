@@ -46,8 +46,11 @@
 	--color-light-100: hsl(0, 0%, 96%);
 	--color-light: hsl(0, 0%, 100%);
 
-	--color-light-075: hsla(0, 0%, 100%, 0.75);
+	--color-dark-016: hsla(0, 0%, 13%, 16%);
+	--color-light-032: hsl(0deg 0% 100% / 32%);
+
 	--color-dark-075: hsla(0, 0%, 13%, 0.75);
+	--color-light-075: hsla(0, 0%, 100%, 0.75);
 
 	--color-danger: hsl(352, 81%, 54%);
 	--color-warning: hsl(34, 99%, 64%);

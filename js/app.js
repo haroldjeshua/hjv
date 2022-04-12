@@ -45,6 +45,7 @@ navbarItems.forEach(function(item, index) {
 	item.addEventListener('click', activatePage)
 })
 
+
 // AOS
 AOS.init( {
 	offset: 200,
@@ -55,6 +56,8 @@ AOS.init( {
 	disable: 'mobile'
 });
 
+
+// Work projects custom cursor
 const sectionWork = document.querySelector('.section--work');
 
 sectionWork.addEventListener('mousemove', (e) => {
@@ -63,4 +66,14 @@ sectionWork.addEventListener('mousemove', (e) => {
         y: e.clientY,
         stagger: -.02,
     })
+});
+
+
+// Work toggle
+const workToggle = document.querySelector('.work-toggle');
+
+workToggle.addEventListener('click', () => {
+	console.log('toggled!')
+	workToggle.classList.toggle('experience');
+	workToggle.textContent = 'hello'
 })

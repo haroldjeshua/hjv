@@ -462,6 +462,31 @@ img {
 	margin-bottom: var(--space-8);
 }
 
+.section--work h1.display {
+	position: relative;
+}
+
+.work-toggle {
+	position: absolute;
+	right: 64px;
+	bottom: -16px;
+	display: flex;
+	flex-direction: row;
+	gap: var(--space-1);
+	font-size: 1rem;
+	line-height: 1;
+	cursor: pointer;
+}
+
+.work-toggle svg {
+	width: 12px;
+	transition: .3s;
+}
+
+.work-toggle.experience svg {
+	transform: rotate(180deg);
+}
+
 .projects {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));

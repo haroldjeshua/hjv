@@ -648,7 +648,7 @@ img {
 	flex-direction: column;
 	justify-content: space-between;
 	width: 100%;
-	margin-bottom: var(--space-3);
+	margin-bottom: var(--space-4);
 }
 
 .experience__role {
@@ -670,6 +670,7 @@ img {
     height: 100%;
 
 	font-weight: 200;
+	line-height: 1.5;
 }
 
 .experience__date {

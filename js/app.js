@@ -71,7 +71,8 @@ sectionWork.addEventListener('mousemove', (e) => {
 
 // Work toggle
 const workToggle = document.querySelector('.work-toggle'),
-	workToggleText = workToggle.querySelector('span');
+	workToggleText = workToggle.querySelector('span'),
+	workHeaderLead = sectionWork.querySelector('.section-header > p.lead');
 
 workToggle.addEventListener('click', () => {
 	console.log('toggled!')
@@ -79,7 +80,9 @@ workToggle.addEventListener('click', () => {
 
 	if (workToggleText.textContent === 'Experience') {
 		workToggleText.textContent = 'Projects'
+		workHeaderLead.textContent = 'Summary of work experience about the various roles I have worked on for the past years.'
 	} else {
 		workToggleText.textContent = 'Experience'
+		workHeaderLead.textContent = 'Collection of projects, from websites to webapps and everything tech. Includes experiments and self-discoveries.'
 	}
 })

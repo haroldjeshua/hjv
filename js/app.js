@@ -70,10 +70,16 @@ sectionWork.addEventListener('mousemove', (e) => {
 
 
 // Work toggle
-const workToggle = document.querySelector('.work-toggle');
+const workToggle = document.querySelector('.work-toggle'),
+	workToggleText = workToggle.querySelector('span');
 
 workToggle.addEventListener('click', () => {
 	console.log('toggled!')
-	workToggle.classList.toggle('experience');
-	workToggle.textContent = 'hello'
+	sectionWork.classList.toggle('work--experience')
+
+	if (workToggleText.textContent === 'Experience') {
+		workToggleText.textContent = 'Projects'
+	} else {
+		workToggleText.textContent = 'Experience'
+	}
 })

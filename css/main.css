@@ -320,7 +320,6 @@ img {
 	justify-content: center;
 	align-items: center;
 	align-content: center;
-	text-align: center;
 	margin: auto;
 	padding: clamp(1.2rem, 1rem, 2rem);
 	display: none;
@@ -345,6 +344,7 @@ img {
 
 .section-header {
 	max-width: var(--width-400);
+	text-align: center;
 	margin: 0 auto;
 }
 
@@ -352,6 +352,10 @@ img {
 	width: 100%;
 	margin: 0 auto;
 	margin-top: var(--space-8);
+}
+
+.section-body.contained {
+	max-width: var(--width-600);
 }
 
 .navbar {
@@ -440,6 +444,10 @@ img {
 
 
 /* Home */
+.section--home {
+	text-align: center;
+}
+
 .harv-name {
 	font-size: clamp(3rem, 5vw, 5rem);
 	margin-bottom: 3rem;
@@ -478,12 +486,16 @@ img {
 	cursor: pointer;
 }
 
+.work-toggle span {
+	transition: .3s;
+}
+
 .work-toggle svg {
 	width: 12px;
 	transition: .3s;
 }
 
-.work-toggle.experience svg {
+.work--experience .work-toggle svg {
 	transform: rotate(180deg);
 }
 
@@ -615,4 +627,25 @@ img {
     color: var(--bg);
     border-radius: var(--radii-4);
     padding: calc(var(--space-1) / 2) var(--space-1);
+}
+
+.experiences {
+	display: none;
+}
+
+.section--work.work--experience .projects {
+	display: none;
+}
+
+.section--work.work--experience .experiences {
+	display: flex;
+}
+
+
+/* # about */
+
+
+/* # misc */
+.empty-state {
+	text-align: center;
 }

@@ -38,7 +38,6 @@ function activatePage(e) {
 	let clickedPage = e.target.getAttribute('href');
 
 	document.querySelector(clickedPage).classList.add('active');
-    nanobar.go(100);
 }
 
 navbarItems.forEach(function(item, index) {
@@ -61,11 +60,11 @@ AOS.init( {
 const sectionWork = document.querySelector('.section--work');
 
 sectionWork.addEventListener('mousemove', (e) => {
-    gsap.to('.project-cursor__text', {
-        x: e.clientX,
-        y: e.clientY,
-        stagger: -.02,
-    })
+	gsap.to('.project-cursor__text', {
+		x: e.clientX,
+		y: e.clientY,
+		stagger: -.02,
+	})
 });
 
 

@@ -1,0 +1,40 @@
+[
+	{
+		"id": 1,
+		"name": "home",
+		"header": "Harold Jeshua Varde",
+		"lead": [
+			"Working between design and development. Interested in intuitive interfaces, product design, design systems, Node, React and everything vanilla"
+		],
+		"empty-state": {
+			"icon": "empty-state-icon-1",
+			"text": "This page is under construction"
+		}
+	},
+	{
+		"id": 4,
+		"name": "work",
+		"header": "Work",
+		"lead": [
+			"Collection of projects, from websites to webapps and everything tech. Includes experiments and self-discoveries.",
+			"Summary of work experience about the various roles I have worked on for the past years."
+		]
+	},
+	{
+		"id": 3,
+		"name": "about",
+		"header": "About",
+		"lead": [
+			"A UX Designer & Front-end Developer from the Philippines, with a strong sense of aesthetics and user interaction.",
+			"On a journey of non-stop learning new exciting things and keeping up with what's latest in tech."
+		]
+	},
+	{
+		"id": 4,
+		"name": "media",
+		"header": "Media",
+		"lead": [
+			"Here I share some of the things that keeps me going, writing about life and whatnot. Filling the gaps sometimes with music and gaming."
+		]
+	}
+]

@@ -1,9 +1,31 @@
 [
-    {
-        "id": "1",
-        "role": "Front-end Developer",
-        "description": "description test blah blah blah",
-        "year": "2018",
-        "company": "IntegrityNet"
-    }
+	{
+		"id": "1",
+		"role": "Front-end Developer",
+		"description": "Building websites and webapps with reusable components and handling async data, migrating legacy codebases into a maintanable and modernized approach.",
+		"duration": "2021 - 2022",
+		"company": "IntegrityNet"
+	},
+	{
+		"id": "2",
+		"role": "UX Designer",
+		"description": "Designed product apps for a contactless restaurant ordering and for a local management information system. Built small design system and style guides on both design tool and codebases.",
+		"duration": "2020 - 2021",
+		"company": "IntegrityNet"
+	},
+	{
+		"id": "3",
+		"role": "Web Developer",
+		"description": "Worked on modernizing company websites and developed internal applications for employees day to day use. As well as dashboard and ordering app for restaurant ecosystem.",
+		"duration": "2019 - 2020",
+		"company": "IntegrityNet"
+	},
+	{
+		"id": "4",
+		"role": "UI Designer",
+		"description": "Designed and developed a digital butler ecosystem for a hotel, includes TV Application, Hotel management system on front-end side.",
+		"duration": "2019 - 2020",
+		"company": "IntegrityNet"
+	},
+
 ]

@@ -3,10 +3,10 @@ const topBar = {
 	classname: 'topbar'
 };
 
-let nanobar = new Nanobar( topBar );
-nanobar.go(33);
-nanobar.go(66);
-nanobar.go(100);
+let nanobar = new Nanobar( topBar )
+nanobar.go(33)
+nanobar.go(66)
+nanobar.go(100)
 
 
 // Navbar + page activate
@@ -25,12 +25,12 @@ const navbar = document.querySelector('.navbar'),
 function activatePage(e) {
 	e.preventDefault();
 
-	navbarItems.forEach(function(item, index) {
+	navbarItems.forEach(function(item) {
 		item.classList.remove('active');
 	});
 
-	[].forEach.call(pages, function(pane, index) {
-		pane.classList.remove('active');
+	[].forEach.call(pages, function(page) {
+		page.classList.remove('active');
 	})
 
 	e.target.classList.add('active');
@@ -53,28 +53,15 @@ AOS.init( {
 	delay: 200,
 	once: true,
 	disable: 'mobile'
-});
-
-
-// Work projects custom cursor
-const sectionWork = document.querySelector('.section--work');
-
-sectionWork.addEventListener('mousemove', (e) => {
-	gsap.to('.project-cursor__text', {
-		x: e.clientX,
-		y: e.clientY,
-		stagger: -.02,
-	})
-});
+})
 
 
 // Work toggle
 const workToggle = document.querySelector('.work-toggle'),
 	workToggleText = workToggle.querySelector('span'),
-	workHeaderLead = sectionWork.querySelector('.section-header > p.lead');
+	workHeaderLead = sectionWork.querySelector('.section-header > p.lead')
 
 workToggle.addEventListener('click', () => {
-	console.log('toggled!')
 	sectionWork.classList.toggle('work--experience')
 
 	if (workToggleText.textContent === 'Experience') {

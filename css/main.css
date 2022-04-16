@@ -255,16 +255,18 @@ img {
 	height: 100%;
 }
 
+.logo-wrapper {
+	margin-bottom: 3rem;
+}
+
 .logo {
 	/* width: 64px; */
 	height: var(--space-3);
 	width: 100%;
-	margin-right: 8px;
 }
 
 .logo--small {
 	height: 64px;
-	margin-bottom: 3rem;
 }
 
 .logo--medium {
@@ -471,7 +473,8 @@ img {
 
 .harv-name {
 	font-family: var(--font-main);
-	font-size: clamp(3.5rem, 5vw, 7rem);
+	font-size: clamp(5rem, 5vw, 7rem);
+	line-height: calc(var(--space-4) + 4px);
 	margin-bottom: 3rem;
 }
 

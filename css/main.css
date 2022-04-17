@@ -111,7 +111,19 @@ h6 {
 }
 
 h1 {
-	font-size: 8rem;
+	font-size: clamp(7rem, 5vw, 9rem);
+}
+
+h2 {
+	font-size: clamp(4rem, 5vw, 6rem);
+}
+
+h3 {
+	font-size: clamp(2rem, 5vw, 4rem);
+}
+
+h4 {
+	font-size: var(--font-size-xl);
 }
 
 h1.display {
@@ -122,6 +134,12 @@ h1.display {
 
 h1.display::first-letter {
 	font-style: oblique;
+}
+
+h2.display {
+	font-family: var(--font-sans);
+	line-height: var(--space-4);
+	margin-bottom: var(--space-4);
 }
 
 p.lead {
@@ -400,7 +418,7 @@ img {
 	backdrop-filter: blur(var(--blur-1));
 	color: var(--bg);
 	border-radius: var(--radii-2);
-	box-shadow: var(--shadows-medium);
+	/* box-shadow: var(--shadows-medium); */
 	transition: .3s;
 }
 
@@ -850,6 +868,41 @@ img {
 .empty-state {
 	text-align: center;
 }
+
+/* scroll to top */
+.scroll-button {
+	position: fixed;
+	right: 1rem;
+	bottom: 1rem;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--bg);
+	color: var(--text);
+	width: 32px;
+	height: 32px;
+	border: none;
+	border-radius: var(--radii-1);
+	padding: 0;
+	cursor: pointer;
+	opacity: 0;
+	transform: translateY(100px);
+	transition: .3s ease;
+	z-index: 100;
+}
+
+.show {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* modals */
+.project-modal {
+	display: none;
+	position: fixed;
+}
+
 
 /* # keyframes */
 @keyframes fade-in {

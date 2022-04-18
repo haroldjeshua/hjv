@@ -1,6 +1,6 @@
 // Topbar
 const topBar = {
-  classname: "topbar",
+	classname: "topbar",
 };
 
 let nanobar = new Nanobar(topBar);
@@ -14,35 +14,35 @@ const navbar = document.querySelector(".navbar"),
 	pages = document.querySelectorAll(".page");
 
 function activatePage(e) {
-  e.preventDefault();
+	e.preventDefault();
 
-  navbarItems.forEach(function (item, index) {
-	item.classList.remove("active");
-  });
+  	navbarItems.forEach(function (item, index) {
+		item.classList.remove("active");
+	});
 
-  [].forEach.call(pages, function (pane, index) {
-	pane.classList.remove("active");
-  });
+  	[].forEach.call(pages, function (pane, index) {
+		pane.classList.remove("active");
+	});
 
-  e.target.classList.add("active");
+	e.target.classList.add("active");
 
-  let clickedPage = e.target.getAttribute("href");
+	let clickedPage = e.target.getAttribute("href");
 
-  document.querySelector(clickedPage).classList.add("active");
+	document.querySelector(clickedPage).classList.add("active");
 }
 
 navbarItems.forEach(function (item, index) {
-  item.addEventListener("click", activatePage, scrollToTop);
+	item.addEventListener("click", activatePage, scrollToTop);
 });
 
 // AOS
 AOS.init({
-  offset: 200,
-  duration: 600,
-  easing: "ease-in-sine",
-  delay: 200,
-  once: true,
-  disable: "mobile",
+	offset: 200,
+	duration: 600,
+	easing: "ease-in-sine",
+	delay: 200,
+	once: true,
+	disable: "mobile",
 });
 
 
@@ -53,41 +53,77 @@ const sectionWork = document.querySelector(".section--work"),
   	workHeaderLead = sectionWork.querySelector(".section-header > p.lead");
 
 workToggle.addEventListener("click", () => {
-  console.log("toggled!");
-  sectionWork.classList.toggle("work--experience");
+	console.log("toggled!");
+	sectionWork.classList.toggle("work--experience");
 
-  if (workToggleText.textContent === "Experience") {
-	workToggleText.textContent = "Projects";
-	workHeaderLead.textContent =
-	  "Summary of work experience about the various roles I have worked on for the past years.";
-  } else {
-	workToggleText.textContent = "Experience";
-	workHeaderLead.textContent =
-	  "Collection of projects, from websites to webapps and everything tech. Includes experiments and self-discoveries.";
-  }
+	if (workToggleText.textContent === "Experience") {
+		workToggleText.textContent = "Projects";
+		workHeaderLead.textContent = "Summary of work experience about the various roles I have worked on for the past years.";
+  	} else {
+		workToggleText.textContent = "Experience";
+		workHeaderLead.textContent = "Collection of projects, from websites to webapps and everything tech. Includes experiments and self-discoveries.";
+	}
 });
 
 // Scroll to top
 const scrollButton = document.querySelector(".scroll-button"),
-  rootElement = document.documentElement;
+	rootElement = document.documentElement;
 
 function handleScroll() {
-  let scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+	let scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
 
-  if (rootElement.scrollTop / scrollTotal > 0.4) {
-	scrollButton.classList.add("show");
-  } else {
-	scrollButton.classList.remove("show");
-  }
+  	if (rootElement.scrollTop / scrollTotal > 0.4) {
+		scrollButton.classList.add("show");
+  	} else {
+		scrollButton.classList.remove("show");
+  	}
 }
 
 function scrollToTop() {
-  // Scroll to top logic
-  rootElement.scrollTo({
-	top: 0,
-	behavior: "smooth",
-  });
+	// Scroll to top logic
+  	rootElement.scrollTo({
+		top: 0,
+		behavior: "smooth",
+	});
 }
 
 scrollButton.addEventListener("click", scrollToTop);
 document.addEventListener("scroll", handleScroll);
+
+
+// Project Modals
+const modalOpen = function() {
+	body.classList.add('modal-open')
+}
+
+const modalClose = function() {
+	body.classList.remove('modal-open')
+}
+
+document.addEventListener('click', function (e) {
+	e = e || window.event;
+	let target = e.target;
+
+	if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'modal' || target.closest('.primary-btn')) {
+		if (target.hasAttribute('data-target') || target.parent) {
+	  		var modalID = target.getAttribute('data-target');
+	  		document.getElementById(modalID).classList.add('modal-active');
+			e.preventDefault();
+	  		modalOpen();
+		}
+	}
+
+	if ((target.hasAttribute('data-dismiss') && target.getAttribute('data-dismiss') == 'modal') || target.closest('.close-modal') || target.classList.contains('modal')) {
+		var modal = document.querySelector('.modal.modal-active');
+		modal.classList.remove('modal-active');
+		e.preventDefault();
+		modalClose();
+	}
+}, false);
+
+document.body.addEventListener('keydown', (e) => {
+	if (e.key === 'Escape') {
+		console.log(e);
+		document.querySelector('.close-modal').click();  
+	}
+});

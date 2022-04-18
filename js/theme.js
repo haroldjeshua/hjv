@@ -2,7 +2,7 @@ const systemPrefBtn = document.querySelector('.system-pref-button');
 
 function getCurrentTheme() {
     let systemPref = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    localStorage.getItem('lem.theme') ? systemPref = localStorage.getItem('lem.theme') : null;
+    localStorage.getItem('hjv.theme') ? systemPref = localStorage.getItem('hjv.theme') : null;
     return systemPref;
 }
 
@@ -28,7 +28,7 @@ systemPrefBtn.addEventListener('click', () => {
     }
     audio.currentTime = 0;
     audio.play();
-    localStorage.setItem('lem.theme', `${systemPref}`);
+    localStorage.setItem('hjv.theme', `${systemPref}`);
     loadSystemPref(systemPref);
 })
 

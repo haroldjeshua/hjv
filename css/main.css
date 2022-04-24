@@ -380,7 +380,7 @@ img {
 }
 
 .hero {
-	max-width: 800px;
+	max-width: 1200px;
 }
 
 .page:not(.section--home) {
@@ -497,13 +497,14 @@ img {
 
 h1.harv-name {
 	font-family: var(--font-main);
-    font-size: clamp(8rem, 5vw, 16rem);
+    font-size: clamp(8rem, 8vw, 16rem);
     line-height: 6rem;
     margin-bottom: 3rem;
+	letter-spacing: -8px;
+	text-transform: uppercase;
+	user-select: none;
 	background: var(--harv-text);
 	background-size: 300%;
-	letter-spacing: -5px;
-	text-transform: uppercase;
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -513,10 +514,12 @@ h1.harv-name {
 }
 
 .harv-lead {
-	font-size: clamp(1.5rem, 5vw, 2.25rem);
-	font-weight: 300;
-	line-height: 1.5;
+	font-size: clamp(1rem, 4vw, 2rem);
+	font-weight: 200;
+	line-height: 1.25;
 	margin-bottom: 3rem;
+	max-width: 800px;
+    margin: 0 auto;
 }
 
 @keyframes animated_text {

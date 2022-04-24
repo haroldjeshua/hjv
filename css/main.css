@@ -18,6 +18,7 @@
 		--body-bgc: var(--mesh-bgc--dark);
 		--body-bgi: var(--mesh-bgi--dark);
 		--project-bg: var(--color-dark-016);
+		--harv-text: var(--animated-text--light);
 	}
 }
 
@@ -35,6 +36,7 @@
 		--body-bgc: var(--mesh-bgc--light);
 		--body-bgi: var(--mesh-bgi--light);
 		--project-bg: var(--color-light-032);
+		--harv-text: var(--animated-text--dark);
 	}
 }
 
@@ -51,6 +53,7 @@
 	--body-bgc: var(--mesh-bgc--dark);
 	--body-bgi: var(--mesh-bgi--dark);
 	--project-bg: var(--color-dark-016);
+	--harv-text: var(--animated-text--light);
 }
 
 [color-scheme="light"] {
@@ -66,6 +69,7 @@
 	--body-bgc: var(--mesh-bgc--light);
 	--body-bgi: var(--mesh-bgi--light);
 	--project-bg: var(--color-light-032);
+	--harv-text: var(--animated-text--dark);
 }
 
 *,
@@ -496,7 +500,7 @@ h1.harv-name {
     font-size: clamp(8rem, 5vw, 16rem);
     line-height: 6rem;
     margin-bottom: 3rem;
-	background: linear-gradient(-45deg, #6355a4, #6355a4, #f2f2f2, #f2f2f2);
+	background: var(--harv-text);
 	background-size: 300%;
 	letter-spacing: -5px;
 	text-transform: uppercase;

@@ -12,15 +12,15 @@
 	--font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
 	--font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
 
-	--color-main: hsl(357, 92%, 47%);
-	--color-main-900: hsl(336, 98%, 22%);
-	--color-main-800: hsl(341, 97%, 26%);
-	--color-main-700: hsl(346, 95%, 33%);
-	--color-main-600: hsl(351, 94%, 40%);
-	--color-main-500: hsl(357, 92%, 47%);
-	--color-main-400: hsl(2, 84%, 60%);
-	--color-main-300: hsl(8, 90%, 69%);
-	--color-main-200: hsl(13, 94%, 80%);
+	--color-main: hsl(252, 75%, 60%);
+	--color-main-900: hsl(248, 77%, 24%);
+	--color-main-800: hsl(248, 69%, 31%);
+	--color-main-700: hsl(250, 63%, 40%);
+	--color-main-600: hsl(251, 56%, 50%);
+	--color-main-500: hsl(252, 75%, 60%);
+	--color-main-400: hsl(253, 80%, 71%);
+	--color-main-300: hsl(255, 86%, 77%);
+	--color-main-200: hsl(256, 92%, 86%);
 	--color-main-100: hsl(18, 87%, 94%);
 
 	--color-dark: hsl(0, 0%, 13%);
@@ -53,10 +53,10 @@
 	--color-dark-075: hsla(0, 0%, 13%, 0.75);
 	--color-light-075: hsla(0, 0%, 100%, 0.75);
 
-	--color-danger: hsl(352, 81%, 54%);
-	--color-warning: hsl(34, 99%, 64%);
-	--color-info: hsl(196, 100%, 40%);
-	--color-success: hsl(147, 98%, 36%);
+	--color-danger: hsl(1, 97%, 62%);
+	--color-warning: hsl(38, 98%, 50%);
+	--color-info: hsl(194, 100%, 47%);
+	--color-success: hsl(127, 71%, 41%);
 
 	--color-sub: hsl(213, 11%, 48%);
 	--color-border: hsl(0, 0%, 93%);

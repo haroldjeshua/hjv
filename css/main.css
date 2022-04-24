@@ -307,6 +307,16 @@ img {
 	font-weight: 500;
 }
 
+.header-left .logo-wrapper {
+	display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+	margin: 0;
+}
+
 .button {
 	display: flex;
 	flex: 0 0 auto;

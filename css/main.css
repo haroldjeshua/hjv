@@ -508,7 +508,7 @@ img {
 h1.harv-name {
 	font-family: var(--font-main);
     font-size: clamp(8rem, 8vw, 16rem);
-    line-height: 6rem;
+    line-height: clamp(6rem, 6vw, 12rem);
     margin-bottom: 3rem;
 	letter-spacing: -8px;
 	text-transform: uppercase;

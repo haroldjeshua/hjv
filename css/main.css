@@ -576,6 +576,19 @@ h1.harv-name {
 	transform: rotate(180deg);
 }
 
+.projects-header {
+	display: flex;
+    flex-direction: row;
+	height: 50px;
+	margin-bottom: var(--space-2);
+}
+
+.projects-header__tabs {
+	display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
 .projects {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));

@@ -593,17 +593,23 @@ h1.harv-name {
 }
 
 .project__tab {
+	--border-w: 3px;
 	font-size: var(--font-size-lg);
 }
+
 .project__tab.active {
-	border-bottom: 2px solid var(--text);
+	border-bottom: var(--border-w) solid var(--text);
 }
 
 .project__tab > a {
 	color: var(--placeholder);
 }
 
-.project__tab > a:hover {
+.project__tab:hover {
+	border-bottom: var(--border-w) solid var(--border);
+}
+
+.project__tab:hover > a {
 	color: var(--text);
 }
 

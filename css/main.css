@@ -581,6 +581,7 @@ h1.harv-name {
     flex-direction: row;
 	height: 50px;
 	margin-bottom: var(--space-2);
+	border-bottom: 1px solid var(--border);
 }
 
 .projects-header__tabs {

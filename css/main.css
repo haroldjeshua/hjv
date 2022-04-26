@@ -590,6 +590,10 @@ h1.harv-name {
     gap: 2rem;
 }
 
+.project__tab.active {
+	border-bottom: 5px solid var(--text);
+}
+
 .projects {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));

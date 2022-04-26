@@ -605,7 +605,7 @@ h1.harv-name {
 	color: var(--placeholder);
 }
 
-.project__tab:hover {
+.project__tab:not(.active):hover {
 	border-bottom: var(--border-w) solid var(--border);
 }
 

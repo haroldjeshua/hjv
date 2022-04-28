@@ -1,0 +1,49 @@
+[
+    {
+        "id": 1,
+        "name": "Languages",
+        "skills": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Go",
+            "PHP",
+            "C#",
+            "VB.NET",
+            "SQL"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Libraries & Frameworks",
+        "skills": [
+            "Tailwindcss",
+            "Bootstrap",
+            "Materialize",
+            "Bulma",
+            "jQuery"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Tools & Platforms",
+        "skills": [
+            "Git",
+            "Netlify",
+            "Heroku",
+            "Vercel",
+            "Docker"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Design",
+        "skills": [
+            "Figma",
+            "Photoshop",
+            "Illustrator",
+            "InVision",
+            "InDesign"
+        ]
+    }
+]

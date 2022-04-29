@@ -29,6 +29,7 @@ function activatePage(e) {
 	let clickedPage = e.target.getAttribute("href");
 
 	document.querySelector(clickedPage).classList.add("active");
+	nanobar.go(100);
 }
 
 navbarItems.forEach(function (item, index) {

@@ -837,6 +837,7 @@ h1.harv-name {
 	cursor: pointer;
 	transition: .3s;
 	/* box-shadow: var(--border) 0px 0px 0px 2px inset; */
+	box-shadow: var(--shadow-small);
 }
 
 @media (max-width: 768px) {

@@ -839,6 +839,16 @@ h1.harv-name {
 	/* box-shadow: var(--border) 0px 0px 0px 2px inset; */
 }
 
+@media (max-width: 768px) {
+	.about-grid {
+		grid-template-columns: 1fr;
+	}	
+
+	.about-grid > .about-grid__item {
+		grid-area: unset;
+	}
+}
+
 .about-grid__item:hover {
 	transform: scale(1.025);
 	box-shadow: var(--shadows-medium);
@@ -940,6 +950,11 @@ h1.harv-name {
 	width: 100%;
 	height: 100%;
 	border-radius: var(--radii-2);
+}
+
+.about-grid--8 {
+	display: flex;
+    justify-content: center;
 }
 
 .card-wrapper {

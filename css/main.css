@@ -830,11 +830,16 @@ h1.harv-name {
 }
 
 .about-grid__item {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 	min-height: 180px;
 	background-color: var(--project-bg);
 	color: var(--text);
 	border-radius: var(--radii-2);
 	cursor: pointer;
+	transition: .3s;
+	/* box-shadow: var(--border) 0px 0px 0px 2px inset; */
 	transition: .3s;
 	/* box-shadow: var(--border) 0px 0px 0px 2px inset; */
 	box-shadow: var(--shadows-small);
@@ -844,7 +849,7 @@ h1.harv-name {
 	.section--about .section-body {
 		max-width: 400px;
 	}
-	
+
 	.about-grid {
 		grid-template-columns: 1fr;
 	}	
@@ -965,6 +970,8 @@ h1.harv-name {
 .card-wrapper {
 	display: flex;
 	flex-direction: column;
+    justify-content: flex-start;
+	height: 100%;
 	border-radius: var(--radii-2);
 	transition: .3s;
 }
@@ -981,7 +988,10 @@ h1.harv-name {
 }
 
 .card__body {
-	/* height: calc(180px - 32px); */
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 	font-size: 1.25rem;
 	padding: var(--space-2);
 	overflow-y: auto;
@@ -1000,7 +1010,7 @@ h1.harv-name {
 }
 
 .card-grid__item > svg {
-	width: 64px;
+	width: 44px;
 }
 
 [data-about=lang] .card-grid {

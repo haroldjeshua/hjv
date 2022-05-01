@@ -825,8 +825,8 @@ h1.harv-name {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: 1fr;
-	row-gap: 4rem;
-	column-gap: 4rem;
+	row-gap: var(--space-4);
+	column-gap: var(--space-4);
 }
 
 .about-grid__item {
@@ -837,7 +837,7 @@ h1.harv-name {
 	cursor: pointer;
 	transition: .3s;
 	/* box-shadow: var(--border) 0px 0px 0px 2px inset; */
-	box-shadow: var(--shadow-small);
+	box-shadow: var(--shadows-small);
 }
 
 @media (max-width: 768px) {

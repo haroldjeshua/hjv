@@ -825,8 +825,8 @@ h1.harv-name {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: 1fr;
-	row-gap: 2rem;
-	column-gap: 2rem;
+	row-gap: 4rem;
+	column-gap: 4rem;
 }
 
 .about-grid__item {

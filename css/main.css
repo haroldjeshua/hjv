@@ -414,8 +414,8 @@ img {
 	max-width: var(--width-600);
 }
 
-.section-body.w-800 {
-	max-width: var(--width-800);
+.section--about .section-body {
+	max-width: 800px;
 }
 
 .navbar {
@@ -841,6 +841,10 @@ h1.harv-name {
 }
 
 @media (max-width: 768px) {
+	.section--about .section-body {
+		max-width: 400px;
+	}
+	
 	.about-grid {
 		grid-template-columns: 1fr;
 	}	

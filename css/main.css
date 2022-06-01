@@ -154,7 +154,7 @@ p.lead {
 }
 
 p {
-	font-size: var(--font-size-md);
+	font-size: var(--font-size-base);
 }
 
 img {
@@ -837,6 +837,16 @@ h1.harv-name {
 
 
 /* # about */
+#about > .section-header {
+	text-align: unset;
+}
+
+.display-name {
+	font-family: var(--font-main);
+	line-height: var(--space-4);
+	margin-bottom: var(--space-3);
+}
+
 .about-grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);

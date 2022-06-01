@@ -838,6 +838,7 @@ h1.harv-name {
 
 /* # about */
 #about > .section-header {
+	max-width: var(--width-600);
 	text-align: unset;
 }
 
@@ -845,6 +846,18 @@ h1.harv-name {
 	font-family: var(--font-main);
 	line-height: var(--space-4);
 	margin-bottom: var(--space-3);
+}
+
+#about > .section-header p:not(.lead) {
+	margin-top: var(--space-4);
+	width: 50%;
+	line-height: var(--space-2);
+}
+
+@media (max-width: 576px) {
+	#about > .section-header p:not(.lead) {
+		width: 100%;
+	}
 }
 
 .about-grid {

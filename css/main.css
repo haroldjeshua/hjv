@@ -856,7 +856,7 @@ h1.harv-name {
 
 @media (max-width: 576px) {
 	#about > .section-header p:not(.lead) {
-		width: 100%;
+		width: 75%;
 	}
 }
 

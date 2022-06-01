@@ -1058,7 +1058,7 @@ h1.harv-name {
 }
 
 [data-about=libfram] .card-grid {
-	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     justify-items: center;
 }
 

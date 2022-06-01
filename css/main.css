@@ -573,7 +573,7 @@ h1.harv-name {
 
 .work-toggle svg {
 	width: 12px;
-	transition: .3s;
+	transition: .3s ease-in-out;
 }
 
 .work--experience .work-toggle svg {

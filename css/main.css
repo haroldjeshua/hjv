@@ -860,6 +860,18 @@ h1.harv-name {
 	}
 }
 
+.social-container {
+	display: flex;
+	justify-content: left;
+	gap: var(--space-2);
+	margin-top: var(--space-4);
+}
+
+.social-container a {
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
 .about-grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);

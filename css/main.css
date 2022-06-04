@@ -994,7 +994,7 @@ h1.harv-name {
 }
 
 [data-about=resume] img {
-	height: 150px;
+	/* height: 150px; */
 	border-radius: var(--radii-1);
 }
 

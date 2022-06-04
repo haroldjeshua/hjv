@@ -1075,13 +1075,13 @@ h1.harv-name {
 }
 
 
-[data-about=contact] .card-grid {
+[data-about=social] .card-grid {
 	font-size: 2rem;
 	grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
 	justify-items: stretch;
 }
 
-[data-about=contact] .card-grid__item {
+[data-about=social] .card-grid__item {
 	display: inline-flex;
     flex-direction: row;
     flex-wrap: nowrap;

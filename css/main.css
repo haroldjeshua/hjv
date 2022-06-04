@@ -1106,6 +1106,27 @@ h1.harv-name {
 	border-radius: var(--radii-1);
 }
 
+.about-grid--9 {
+	grid-area: 5/ 1 / 6 / 4;
+}
+
+[data-about=contact] .card__body {
+	flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-button {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    width: max-content;
+	margin-top: var(--space-2);
+}
+
 .image {
 	display: flex;
 }

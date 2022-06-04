@@ -1085,8 +1085,8 @@ h1.harv-name {
 	display: inline-flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: flex-start;
-	gap: 1rem;
+    justify-content: center;
+	gap: var(--space-2);
 }
 
 .social-item {

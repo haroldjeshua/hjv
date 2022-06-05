@@ -8,10 +8,13 @@ nanobar.go(33);
 nanobar.go(66);
 nanobar.go(100);
 
+
 // Navbar + page activate
 const navbar = document.querySelector(".navbar"),
 	navbarItems = navbar.querySelectorAll(".navbar__link"),
-	pages = document.querySelectorAll(".page");
+	pages = document.querySelectorAll(".page"),
+	home = document.querySelector(".section--home"),
+	homeLead = home.querySelector(".hero > .harv-lead");
 
 function activatePage(e) {
 	e.preventDefault();
@@ -35,6 +38,7 @@ function activatePage(e) {
 navbarItems.forEach(function (item, index) {
 	item.addEventListener("click", activatePage, scrollToTop);
 });
+
 
 // AOS
 AOS.init({
@@ -66,6 +70,7 @@ workToggle.addEventListener("click", () => {
 	}
 });
 
+
 // Scroll to top
 const scrollButton = document.querySelector(".scroll-button"),
 	rootElement = document.documentElement;
@@ -79,6 +84,7 @@ function handleScroll() {
 		scrollButton.classList.remove("show");
   	}
 }
+
 
 function scrollToTop() {
 	// Scroll to top logic
@@ -107,8 +113,8 @@ document.addEventListener('click', function (e) {
 
 	if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'modal' || target.closest('.primary-btn')) {
 		if (target.hasAttribute('data-target') || target.parent) {
-	  		var modalID = target.getAttribute('data-target');
-	  		document.getElementById(modalID).classList.add('modal-active');
+	  		var modalId = target.getAttribute('data-target');
+	  		document.getElementById(modalId).classList.add('modal-active');
 			e.preventDefault();
 	  		modalOpen();
 		}

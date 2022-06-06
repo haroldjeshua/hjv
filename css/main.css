@@ -1111,10 +1111,13 @@ h1.harv-name {
 }
 
 [data-about=contact] .card__body {
-	flex-direction: column;
-    align-content: center;
-    justify-content: center;
+	align-content: center;
     align-items: center;
+	text-align: center;
+}
+
+[data-about=contact] p.lead {
+	margin-top: var(--space-1);
 }
 
 .email-button {

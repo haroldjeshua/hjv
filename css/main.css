@@ -974,6 +974,7 @@ h1.harv-name {
 }
 
 .image img {
+	height: 100%;
 	border-radius: var(--radii-2);
 }
 
@@ -984,6 +985,7 @@ h1.harv-name {
 [data-about=dp] .image img {
 	mix-blend-mode: multiply;
     filter: grayscale(100%) contrast(1);
+	transition: .3s;
 }
 
 [data-about=dp]:hover .image-overlay {

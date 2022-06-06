@@ -134,3 +134,11 @@ document.body.addEventListener('keydown', (e) => {
 		document.querySelector('.close-modal').click();  
 	}
 });
+
+
+// About Image Toggle
+const imageToggleBtn = document.querySelector('.image-toggle');
+
+imageToggleBtn.addEventListener('click', function() {
+	console.log('test')
+})

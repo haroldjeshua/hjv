@@ -470,9 +470,18 @@
 				<div class="about-grid">
 					<div class="about-grid__item about-grid--1" data-about="dp">
 						<div class="image-wrapper">
-							<div class="image" title="it's me">
+							<div class="image">
 								<div class="image-overlay"></div>
-								<img src="assets/media/me-masked.jpg" alt="">
+								<picture>
+									<source type="image/webp" srcset="assets/media/me-masked.webp">
+									<source type="image/jpeg" srcset="assets/media/me-masked.jpg">
+									<img hidden src="assets/media/me-masked.jpg" alt="picture of author, shy" title="it's me">
+								</picture>
+								<picture>
+									<source type="image/webp" srcset="assets/media/me-beach.webp">
+									<source type="image/jpeg" srcset="assets/media/me-beach.jpg">
+									<img  src="assets/media/me-beach.jpg" alt="picture of author, happy" title="it's me, happy">
+								</picture>								
 							</div>
 						</div>
 

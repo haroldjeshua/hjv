@@ -96,17 +96,17 @@
 			<div class="section-body projects-wrapper">
 				<div class="projects-header">
 					<div class="projects-header__tabs">
-						<div class="project__tab active">
-							<a href="#All">All</a>
+						<div class="project__tab active" data-filter="all">
+							<a href="#!">All</a>
 						</div>
-						<div class="project__tab">
-							<a href="#web">Web</a>
+						<div class="project__tab" data-filter="web">
+							<a href="#!">Web</a>
 						</div>
-						<div class="project__tab">
-							<a href="#apps" title="on going updates">Apps</a>
+						<div class="project__tab" data-filter="app">
+							<a href="#!">Apps</a>
 						</div>
-						<div class="project__tab">
-							<a href="#experiment">Experiment</a>
+						<div class="project__tab" data-filter="experiment">
+							<a href="#!">Experiment</a>
 						</div>
 					</div>
 					<div class="projects-header__filter">
@@ -120,234 +120,28 @@
 					</div>
 				</div>
 
-				<div class="projects" data-project="web">
+				<div class="projects" data-projects></div>
+
+				<template data-project>
 					<article class="project">
-						<div class="project__image">
-							<img src="assets/work/project1.png" alt="">
-						</div>
-
-						<div class="project__content">
-							<div class="project__text">
-								<div class="project__title">IntegrityNet</div>
-								<div class="project__description">2019</div>
+						<a data-project-link target="_blank" rel="noopener noreferrer">
+							<div class="project__image">
+								<img src="" alt="" data-project-image>
 							</div>
-							<div class="project__right">
-								<div class="project__tag">Web</div>
+	
+							<div class="project__content">
+								<div class="project__text">
+									<div class="project__title" data-project-title></div>
+									<div class="project__description" data-project-description></div>
+									<div class="project__year" data-project-year></div>
+								</div>
+								<div class="project__right">
+									<div class="project__tag" data-project-tag></div>
+								</div>
 							</div>
-						</div>
+						</a>
 					</article>
-
-					<article class="project">
-						<div class="project__image">
-							<img src="assets/work/project2.png" alt="">
-						</div>
-
-						<div class="project__content">
-							<div class="project__text">
-								<div class="project__title">BPO</div>
-								<div class="project__description">2019</div>
-							</div>
-							<div class="project__right">
-								<div class="project__tag">Web</div>
-							</div>
-						</div>
-					</article>
-
-					<article class="project">
-						<div class="project__image">
-							<img src="assets/work/project3.png" alt="">
-						</div>
-
-						<div class="project__content">
-							<div class="project__text">
-								<div class="project__title">PBX</div>
-								<div class="project__description">2019</div>
-							</div>
-							<div class="project__right">
-								<div class="project__tag">Web</div>
-							</div>
-						</div>
-					</article>
-
-					<article class="project">
-						<div class="project__image">
-							<img src="assets/work/project4.png" alt="">
-						</div>
-
-						<div class="project__content">
-							<div class="project__text">
-								<div class="project__title">PCI</div>
-								<div class="project__description">2019</div>
-							</div>
-							<div class="project__right">
-								<div class="project__tag">Web</div>
-							</div>
-						</div>
-					</article>
-
-					<article class="project">
-						<div class="project__image">
-							<img src="assets/work/project5.png" alt="">
-						</div>
-
-						<div class="project__content">
-							<div class="project__text">
-								<div class="project__title">Events</div>
-								<div class="project__description">2022</div>
-							</div>
-							<div class="project__right">
-								<div class="project__tag">Web</div>
-							</div>
-						</div>
-					</article>
-
-					<article class="project">
-						<div class="project__image">
-							<img src="assets/work/project6.png" alt="">
-						</div>
-
-						<div class="project__content">
-							<div class="project__text">
-								<div class="project__title">Pudding</div>
-								<div class="project__description">2021</div>
-							</div>
-							<div class="project__right">
-								<div class="project__tag">Web</div>
-							</div>
-						</div>
-					</article>
-
-					<article class="project">
-						<div class="project__image">
-							<img src="assets/work/project7.png" alt="">
-						</div>
-
-						<div class="project__content">
-							<div class="project__text">
-								<div class="project__title">Luks</div>
-								<div class="project__description">2022</div>
-							</div>
-							<div class="project__right">
-								<div class="project__tag">Web</div>
-							</div>
-						</div>
-					</article>
-
-					<article class="project">
-						<div class="project__image">
-							<img src="assets/work/project8.png" alt="">
-						</div>
-
-						<div class="project__content">
-							<div class="project__text">
-								<div class="project__title">Zumumu</div>
-								<div class="project__description">2020</div>
-							</div>
-							<div class="project__right">
-								<div class="project__tag">Web</div>
-							</div>
-						</div>
-					</article>
-					
-					<article class="project">
-						<div class="project__image">
-							<img src="assets/work/project9.png" alt="">
-						</div>
-
-						<div class="project__content">
-							<div class="project__text">
-								<div class="project__title">Goro</div>
-								<div class="project__description">2018</div>
-							</div>
-							<div class="project__right">
-								<div class="project__tag">App</div>
-							</div>
-						</div>
-					</article>
-					
-					<article hidden class="project">
-						<div class="project__image">
-							<img src="assets/work/project10.png" alt="">
-						</div>
-
-						<div class="project__content">
-							<div class="project__text">
-								<div class="project__title">Kiosks</div>
-								<div class="project__description">2018</div>
-							</div>
-							<div class="project__right">
-								<div class="project__tag">App</div>
-							</div>
-						</div>
-					</article>
-					
-					<article class="project">
-						<div class="project__image">
-							<img src="assets/work/project12.png" alt="">
-						</div>
-
-						<div class="project__content">
-							<div class="project__text">
-								<div class="project__title">DigiButler</div>
-								<div class="project__description">2018</div>
-							</div>
-							<div class="project__right">
-								<div class="project__tag">App</div>
-							</div>
-						</div>
-					</article>
-					
-					<article class="project">
-						<div class="project__image">
-							<img src="assets/work/project13.png" alt="">
-						</div>
-
-						<div class="project__content">
-							<div class="project__text">
-								<div class="project__title">Circle POS</div>
-								<div class="project__description">2018</div>
-							</div>
-							<div class="project__right">
-								<div class="project__tag">App</div>
-							</div>
-						</div>
-					</article>
-
-					<article class="project">
-						<div class="project__image">
-							<img src="assets/work/project14.png" alt="">
-						</div>
-
-						<div class="project__content">
-							<div class="project__text">
-								<div class="project__title">Fud-app</div>
-								<div class="project__description">2020</div>
-							</div>
-							<div class="project__right">
-								<div class="project__tag">App</div>
-							</div>
-						</div>
-					</article>
-					
-					<article class="project">
-						<div class="project__image">
-							<img src="assets/work/project15e.png" alt="">
-						</div>
-
-						<div class="project__content">
-							<div class="project__text">
-								<div class="project__title">IDS</div>
-								<div class="project__description">2021</div>
-							</div>
-							<div class="project__right">
-								<div class="project__tag">Experiment</div>
-							</div>
-						</div>
-					</article>
-				</div>
-
-				<div hidden class="projects" data-project="app"></div>
-				<div hidden class="projects" data-project="experiment"></div>
+				</template>
 					
 				<div hidden class="project-cursor">
 					<span class="project-cursor__text">View Project</span>

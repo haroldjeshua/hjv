@@ -15,7 +15,8 @@
 			"image3",
 			"image4",
 			"image5"
-		]
+		],
+		"link": "https://www.integritynet.biz/"
 	},
 	{
 		"id": 2,
@@ -33,7 +34,8 @@
 			"image3",
 			"image4",
 			"image5"
-		]
+		],
+		"link": "https://www.integritybpo.com/"
 	},
 	{
 		"id": 3,
@@ -51,7 +53,8 @@
 			"image3",
 			"image4",
 			"image5"
-		]
+		],
+		"link": "https://www.integritypbx.net/"
 	},
 	{
 		"id": 4,
@@ -69,14 +72,15 @@
 			"image3",
 			"image4",
 			"image5"
-		]
+		],
+		"link": "https://www.integritypci.com/"
 	},
 	{
 		"id": 5,
 		"codename": "project5",
-		"name": "Share Events",
-		"alias": "Events",
-		"description": "test5",
+		"name": "Events",
+		"alias": "Share Events",
+		"description": "A website application to showcase Events Halls and for users to reserve for their events.",
 		"tag": "web",
 		"year": "2020",
 		"icon": "icon5",
@@ -87,14 +91,15 @@
 			"image3",
 			"image4",
 			"image5"
-		]
+		],
+		"link": "https://events.sharecafe.ph/"
 	},
 	{
 		"id": 6,
 		"codename": "project6",
 		"name": "Pudding",
 		"alias": "Pudding",
-		"description": "test6",
+		"description": "Pudding provides dependable solutions to safeguard industries and their assets.",
 		"tag": "web",
 		"year": "2021",
 		"icon": "icon6",
@@ -105,14 +110,15 @@
 			"image3",
 			"image4",
 			"image5"
-		]
+		],
+		"link": "https://pudding.ws/"
 	},
 	{
 		"id": 7,
 		"codename": "project7",
 		"name": "Luks Lofts Hotel",
 		"alias": "Luks",
-		"description": "test7",
+		"description": "A marketing website for a luxurious website in Philippines.",
 		"tag": "web",
 		"year": "2022",
 		"icon": "icon7",
@@ -123,14 +129,15 @@
 			"image3",
 			"image4",
 			"image5"
-		]
+		],
+		"link": "https://lukslofts.com/"
 	},
 	{
 		"id": 8,
 		"codename": "project8",
 		"name": "Zumumu",
 		"alias": "Zumumu",
-		"description": "test8",
+		"description": "Secured Trusted Solutions",
 		"tag": "web",
 		"year": "2020",
 		"icon": "icon8",
@@ -148,7 +155,7 @@
 		"codename": "project9",
 		"name": "Goro",
 		"alias": "Goro",
-		"description": "test9",
+		"description": "A prototype crypto-wallet app focused on the middle east region.",
 		"tag": "app",
 		"year": "2018",
 		"icon": "icon9",
@@ -164,31 +171,32 @@
 	{
 		"id": 10,
 		"codename": "project10",
-		"name": "Kiosks",
-		"alias": "Kiosks",
-		"description": "Kiosks for variety of industry (such as restaurant and hardware), used for contactless ordering.",
+		"name": "DigiButler",
+		"alias": "Butler",
+		"description": "A digital guest engagement system for a local hotel in PH.",
 		"tag": "app",
 		"year": "2018",
 		"icon": "icon10",
-		"thumb": "project10.png",
+		"thumb": "project12.png",
 		"images": [
 			"image1",
 			"image2",
 			"image3",
 			"image4",
 			"image5"
-		]
+		],
+		"link": "https://www.digibutler.net/"
 	},
 	{
 		"id": 11,
 		"codename": "project11",
-		"name": "Kiosks",
-		"alias": "Kiosks",
-		"description": "description11",
+		"name": "Circle POS",
+		"alias": "Circle POS",
+		"description": "A Square POS clone for testing environment app.",
 		"tag": "app",
 		"year": "2018",
 		"icon": "icon11",
-		"thumb": "project11.png",
+		"thumb": "project13.png",
 		"images": [
 			"image1",
 			"image2",
@@ -200,49 +208,12 @@
 	{
 		"id": 12,
 		"codename": "project12",
-		"name": "DigiButler",
-		"alias": "Butler",
-		"description": "description12",
-		"tag": "app",
-		"year": "2018",
-		"icon": "icon12",
-		"thumb": "project12.png",
-		"images": [
-
-			"image1",
-			"image2",
-			"image3",
-			"image4",
-			"image5"
-		]
-	},
-	{
-		"id": 13,
-		"codename": "project13",
-		"name": "eGrub POS",
-		"alias": "Circle POS",
-		"description": "A Square POS clone for testing environment app.",
-		"tag": "app",
-		"year": "2018",
-		"icon": "icon13",
-		"thumb": "project13.png",
-		"images": [
-			"image1",
-			"image2",
-			"image3",
-			"image4",
-			"image5"
-		]
-	},
-	{
-		"id": 14,
-		"codename": "project14",
-		"name": "Zumumu Apps",
-		"alias": "Zapp",
-		"description": "description14",
-		"tag": "app",
+		"name": "Fud-app",
+		"alias": "Turo-turo",
+		"description": "A static front-end prototype for food ordering system.",
+		"tag": "experiment",
 		"year": "2019",
-		"icon": "icon14",
+		"icon": "icon12",
 		"thumb": "project14.png",
 		"images": [
 			"image1",
@@ -250,17 +221,18 @@
 			"image3",
 			"image4",
 			"image5"
-		]
+		],
+		"link": "https://fud-app.netlify.app/"
 	},
 	{
-		"id": 15,
-		"codename": "project15",
-		"name": "Turo Turo",
-		"alias": "Turo",
-		"description": "description15",
+		"id": 13,
+		"codename": "project13",
+		"name": "IntegrityUI",
+		"alias": "IDS",
+		"description": "An internal small design system for company, used for faster production and UI consistency.",
 		"tag": "experiment",
-		"year": "2020",
-		"icon": "icon15",
+		"year": "2021",
+		"icon": "icon13",
 		"thumb": "project15.png",
 		"images": [
 			"image1",
@@ -268,60 +240,7 @@
 			"image3",
 			"image4",
 			"image5"
-		]
-	},
-	{
-		"id": 16,
-		"codename": "project16",
-		"name": "IDS",
-		"alias": "IDS",
-		"description": "description16",
-		"tag": "experiment",
-		"year": "2021",
-		"icon": "icon16",
-		"thumb": "project16.png",
-		"images": [
-			"image1",
-			"image2",
-			"image3",
-			"image4",
-			"image5"
-		]
-	},
-	{
-		"id": 17,
-		"codename": "project17",
-		"name": "Sangk.app",
-		"alias": "Sangkapp",
-		"description": "description17",
-		"tag": "experiment",
-		"year": "2022",
-		"icon": "icon17",
-		"thumb": "project17.png",
-		"images": [
-			"image1",
-			"image2",
-			"image3",
-			"image4",
-			"image5"
-		]
-	},
-	{
-		"id": 18,
-		"codename": "project18",
-		"name": "Sangk.app",
-		"alias": "Sangkapp",
-		"description": "description17",
-		"tag": "experiment",
-		"year": "2022",
-		"icon": "icon17",
-		"thumb": "project17.png",
-		"images": [
-			"image1",
-			"image2",
-			"image3",
-			"image4",
-			"image5"
-		]
+		],
+		"link": "https://integrity-ui.netlify.app/"
 	}
 ]

@@ -133,7 +133,7 @@ document.body.addEventListener('keydown', (e) => {
 		console.log(e);
 		document.querySelector('.close-modal').click();  
 	}
-});
+})
 
 
 // About Image Toggle
@@ -160,3 +160,37 @@ imageToggleBtn.addEventListener('click', function() {
 		dpTitle.setAttribute('title', 'it\s me');
 	}
 })
+
+
+// Projects Displaying
+const projectTemplate = document.querySelector('[data-project]')
+const projectContainer = document.querySelector('[data-projects]')
+const PROJECT_URL = '../data/work/projects.json';
+const PROJECT_IMAGE_PATH = '../assets/work/'
+
+let projects = []
+
+fetch(PROJECT_URL)
+	.then(res => res.json())
+	.then(data => {
+		projects = data.map(project => {
+			const projectCard = projectTemplate.content.cloneNode(true).children[0]
+
+			const projectLink = projectCard.querySelector('[data-project-link]')
+			const projectImage = projectCard.querySelector('[data-project-image]')
+			const projectTitle = projectCard.querySelector('[data-project-title]')
+			const projectDescription = projectCard.querySelector('[data-project-description]')
+			const projectYear = projectCard.querySelector('[data-project-year]')
+			const projectTag = projectCard.querySelector('[data-project-tag]')
+
+			projectLink.setAttribute('href', project.link)
+			projectImage.src = PROJECT_IMAGE_PATH + project.thumb
+			projectTitle.textContent = project.name
+			projectDescription.textContent = project.description
+			projectYear.textContent = project.year
+			projectTag.textContent = project.tag
+
+			projectContainer.append(projectCard)
+			return { link: project.link, thumb: project.thumb, name: project.name, description: project.description, year: project.year, tag: project.tag, element: projectCard }
+		})
+	})

@@ -137,8 +137,23 @@ document.body.addEventListener('keydown', (e) => {
 
 
 // About Image Toggle
-const imageToggleBtn = document.querySelector('.image-toggle');
+const imageToggleBtn = document.querySelector('.image-toggle'),
+	dpWrapper = document.querySelector('.dp-wrapper'),
+	meMaskedOn = 'assets/media/me-masked.webp',
+	meMaskedOff = 'assets/media/me-beach.webp';
 
 imageToggleBtn.addEventListener('click', function() {
-	console.log('test')
+	// transform: rotate(180deg);
+	imageToggleBtn.classList.toggle('unmasked');
+	dpWrapper.classList.toggle('unmasked');
+	
+	if (dpWrapper.matches('.unmasked')) {
+		dpWrapper.querySelector('source[type="image/webp"]').srcset = meMaskedOff;
+		dpWrapper.querySelector('source[type="image/jpeg"]').srcset = meMaskedOff.replace('.webp', '.jpg');
+		dpWrapper.querySelector('img').src = meMaskedOff.replace('.webp', '.jpg');
+	} else {
+		dpWrapper.querySelector('source[type="image/webp"]').srcset = meMaskedOn;
+		dpWrapper.querySelector('source[type="image/jpeg"]').srcset = meMaskedOn.replace('.webp', '.jpg');
+		dpWrapper.querySelector('img').src = meMaskedOn.replace('.webp', '.jpg');
+	}
 })

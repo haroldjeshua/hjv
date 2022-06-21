@@ -47,11 +47,11 @@
 	--color-light-100: hsl(0, 0%, 96%);
 	--color-light: hsl(0, 0%, 100%);
 
-	--color-dark-016: hsla(0, 0%, 13%, 32%);
-	--color-light-032: hsl(0deg 0% 100% / 32%);
+	--color-dark-032: hsla(0, 0%, 16%, .50);
+	--color-light-032: hsla(0, 0%, 100%, .50);
 
-	--color-dark-075: hsla(0, 0%, 13%, 0.75);
-	--color-light-075: hsla(0, 0%, 100%, 0.75);
+	--color-dark-075: hsla(0, 0%, 13%, .75);
+	--color-light-075: hsla(0, 0%, 87%, .75);
 
 	--color-danger: hsl(1, 97%, 62%);
 	--color-warning: hsl(38, 98%, 50%);
@@ -107,11 +107,11 @@
 	--cursor-project--dark: url('../assets/media/cursor--project-32-dark.png'), url('../assets/media/cursor--project-32-dark.svg'), url('../assets/media/cursor--project-32-dark.jpg'), auto;
 	
 	--mesh-bgc--dark: hsla(0,0%,13%,1);
-	--mesh-bgi--dark: 
+	--mesh-bgi--dark:
 		radial-gradient(at 24% 90%, hsla(259,12%,47%,0.75) 0px, transparent 50%),
 		radial-gradient(at 70% 99%, hsla(258,27%,38%,0.86) 0px, transparent 50%);
 	
-	--mesh-bgc--light: hsla(0,0%,100%,1);
+	--mesh-bgc--light: hsla(0,0%,87%,1);
 	--mesh-bgi--light:
 		radial-gradient(at 24% 90%, hsla(266,58%,87%,1) 0px, transparent 50%),
 		radial-gradient(at 70% 99%, hsla(259,56%,75%,1) 0px, transparent 50%);

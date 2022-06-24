@@ -152,12 +152,12 @@ imageToggleBtn.addEventListener('click', function() {
 		dpWrapper.querySelector('source[type="image/webp"]').srcset = meMaskedOff;
 		dpWrapper.querySelector('source[type="image/jpeg"]').srcset = meMaskedOff.replace('.webp', '.jpg');
 		dpWrapper.querySelector('img').src = meMaskedOff.replace('.webp', '.jpg');
-		dpTitle.setAttribute('title', 'it\s me, happy');
+		dpTitle.setAttribute('title', 'it\'s me, happy');
 	} else {
 		dpWrapper.querySelector('source[type="image/webp"]').srcset = meMaskedOn;
 		dpWrapper.querySelector('source[type="image/jpeg"]').srcset = meMaskedOn.replace('.webp', '.jpg');
 		dpWrapper.querySelector('img').src = meMaskedOn.replace('.webp', '.jpg');
-		dpTitle.setAttribute('title', 'it\s me');
+		dpTitle.setAttribute('title', 'it\'s me');
 	}
 })
 

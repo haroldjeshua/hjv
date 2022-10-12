@@ -204,7 +204,16 @@ img {
 .header {
 	position: fixed;
 	display: -webkit-box;
-	display: flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex; 
+	-webkit-box-orient: horizontal;
+	-moz-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-moz-box-direction: normal;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
 	flex-direction: row;
 	-webkit-box-pack: center;
 	justify-content: center;
@@ -221,6 +230,7 @@ img {
 
 .header-left {
 	flex: 1 1 0%;
+	display: -webkit-box;
 	display: flex;
 	flex-direction: row;
 	-webkit-box-pack: start;
@@ -233,6 +243,7 @@ img {
 }
 
 .header-center {
+	display: -webkit-box;
 	display: flex;
 	flex-direction: row;
 	-webkit-box-pack: center;

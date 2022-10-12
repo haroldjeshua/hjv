@@ -203,6 +203,7 @@ img {
 
 .header {
 	position: fixed;
+	display: -webkit-box;
 	display: flex;
 	flex-direction: row;
 	-webkit-box-pack: center;

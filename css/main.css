@@ -1321,6 +1321,9 @@ h1.harv-name {
 	border-radius: var(--radii-4);
 }
 
+.text-flicker {
+	animation: text-flicker 2s infinite alternate;
+}
 
 /* # keyframes */
 @keyframes fade-in {
@@ -1378,5 +1381,19 @@ h1.harv-name {
 
 	100% {
 		box-shadow: 0 0 0 0 rgba(52, 172, 224, 0);
+	}
+}
+
+@keyframes text-flicker {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
 	}
 }

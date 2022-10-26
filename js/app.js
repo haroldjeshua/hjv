@@ -40,17 +40,6 @@ navbarItems.forEach(function (item, index) {
 });
 
 
-// AOS
-AOS.init({
-	offset: 200,
-	duration: 600,
-	easing: "ease-in-sine",
-	delay: 200,
-	once: true,
-	disable: "mobile",
-});
-
-
 // Work toggle
 const sectionWork = document.querySelector(".section--work"),
 	workToggle = document.querySelector(".work-toggle"),

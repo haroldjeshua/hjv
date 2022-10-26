@@ -165,7 +165,7 @@ imageToggleBtn.addEventListener('click', function() {
 // Projects Displaying
 const projectTemplate = document.querySelector('[data-project]')
 const projectContainer = document.querySelector('[data-projects]')
-const PROJECT_URL = '../data/work/projects.json';
+const PROJECT_URL = '../data/work/projects.json'
 const PROJECT_IMAGE_PATH = '../assets/work/'
 
 let projects = []

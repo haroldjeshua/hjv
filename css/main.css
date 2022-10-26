@@ -626,6 +626,7 @@ h1.harv-name {
 	height: 50px;
 	margin-bottom: var(--space-2);
 	border-bottom: 1px solid var(--border);
+	display: none;
 }
 
 .projects-header__tabs {
@@ -779,13 +780,13 @@ h1.harv-name {
 	}
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
 	.projects {
 		grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
 		grid-column-gap: var(--space-3);
 		grid-row-gap: var(--space-3);
 	}
-}
+} */
 
 /* @media screen and (max-width: 400px) {
 	.projects {

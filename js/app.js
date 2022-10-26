@@ -33,6 +33,7 @@ function activatePage(e) {
 
 	document.querySelector(clickedPage).classList.add("active");
 	nanobar.go(100);
+	scrollToTop();
 }
 
 navbarItems.forEach(function (item, index) {

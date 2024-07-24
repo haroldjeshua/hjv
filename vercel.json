@@ -1,7 +1,0 @@
-{
-    "build": {
-      "env": {
-        "PROJECT_TOKEN": "@project_token"
-      }
-    }
-  }
